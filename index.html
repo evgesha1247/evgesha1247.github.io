@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<title>My</title>
+	</head>
+
+<body>
+
+
+
+
+
+  <div class="formWrapp">
+    <div class="img"></div>
+	   
+	   <div class="formContent ">
+	     <div class="formHeader">
+			      <div class="signIn"><a href="">sign in</a></div>
+			       <div class="signUp"><a href="">sign Up</a></div>
+			      
+			     </div> 
+		  <form action="mail.php" method="POST" class="form">
+
+			    <div class="formGroutName">
+				 <label  class="formTitle">FULL NAME</label>
+				 <input class="formInput" 
+					     placeholder=" Enter your full name"
+					     type = "text" id="name" 
+					     data-rule="name"
+					     autocomplete = "off">
+				 <i class="fa fa-check-circle"></i> 
+			    <i class="fa fa-exclamation-circle"></i>
+				 <small>Error: only letters can be used</small>
+			   </div>
+
+             
+				  <div class="formGroutEmail">
+				  	<label class="formTitle">E-MALL</label>
+				   <input class="formInput" 
+					    	 placeholder=" Enter your e-mail address"
+					   	 type = "text" id="email"
+					   	 data-rule="email" 
+					  	    autocomplete = "off" >
+					<i class="fa fa-check-circle"></i> 
+					<i class="fa fa-exclamation-circle"></i>
+					<small>Error</small>
+				  </div>
+
+					
+				   <div class="formGroutPass">
+					 <label class="formTitle">PASSWORD</label>
+					 <input class="formInput" 
+					    	  type="password" id="pass"
+					    	  data-rule="pass" 
+					    	  autocomplete = "off" 
+					    	  placeholder=" Enter your password"
+					    	  maxlength="8">
+					 <i class="fa fa-check-circle"></i> 
+					 <i class="fa fa-exclamation-circle"></i>
+					 <small>Error</small>
+					</div>
+          </form>
+	     <div class="botton">
+
+				 <form action="#" enctype="multipart/form-data" method="POST">
+				 	
+	     	    	<input  type="submit" 
+				           value="Log in" 
+				           class="formButton"></input>
+	     	   
+					<div class="logOf">or login with:
+					<a href=""><i class="fa fa-vk iconVk"></i></a>
+					<a href=""><i class="fa fa-google iconGoogle"></i></a></div>
+
+				   <input type="checkbox" 
+				          class="checkbox"
+				          id="checkbox" 
+				          value="yes">
+					<label for="checkbox">by signig up you agree</label>
+					<p><a href=""><u>terms & Conditions</u></a></p> 
+				   </input>
+            </form>
+
+			     </div>
+	   </div>
+
+   </div>
+
+
+
+
+
+</body>
+
+ <script src="index.js"></script>
+</html>

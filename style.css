@@ -1,0 +1,223 @@
+*{
+	box-sizing: border-box;
+   margin :0 ;
+	padding: 0;}
+a{
+	text-decoration: none;
+	color: #Ececec
+  }
+body {
+	display: flex;
+	justify-content:center ;
+   align-items: center;
+   margin:0;
+   min-height: 100vh;  
+   background: #3e3e3e
+  }
+
+.formWrapp{
+	overflow: hidden;
+   display: flex;
+   font-family: sans-serif;
+   justify-content: center;
+  }
+.img{
+	background: #E94347;
+	text-align: center;
+	min-width: 300px;
+   border-radius: 12px 0px 0 12px;
+  }
+.formContent{
+   background: #10223F;
+   border-radius: 0px 12px 12px 0
+  }
+
+.formContent2{
+   background: #102F;
+   border-radius: 0px 12px 12px 0
+  }
+/*-------верхушка------*/
+	.formHeader{
+		display: flex;
+		justify-content:flex-end;
+		padding: 20px 30px 30px 30px;
+	  }
+	.signIn , .signUp{
+		font-size: 12px;
+		width: 60px;
+		height: 25px;
+		text-align: center;
+		line-height: 1.8;
+	  }
+	.signIn{
+		border-radius: 50px 0 0 50px;
+		background: #1B3A5F;
+	  }
+	.signUp{
+		border-radius:  0 50px 50px 0;
+		background: #E94347;
+	  }
+/*---------------------*/
+
+
+/*-------импуты--------*/
+  .form{
+		position: relative;
+		padding: 30px 30px 0px 30px  ;
+		font-family: sans-serif;
+		color: rgba(220,220,250,0.9);
+       }
+  .formGroutName,
+  .formGroutEmail,
+  .formGroutPass{
+		padding: 0 0 25px 0;
+		position: relative;
+	    }
+  
+  .formGroutName label,
+  .formGroutEmail label,
+  .formGroutPass label{
+      display: inline-block;
+      margin-bottom: 5px;
+	   }
+  
+  .formGroutName i,
+  .formGroutEmail i,
+  .formGroutPass i{
+	 	position: absolute;
+	 	visibility: hidden;
+	 	right: 10px;
+	 	top: 33px
+	   }
+  
+  .formGroutName small,
+  .formGroutEmail small,
+  .formGroutPass small{
+	 	position: absolute;
+	 	visibility: hidden;}
+  
+  .formGroutName.success input,
+  .formGroutEmail.success input,
+  .formGroutPass.success input{
+      border-color: #2ecc71
+	   }
+  
+  .formGroutName.error input,
+  .formGroutEmail.error input,
+  .formGroutPass.error input{
+      border-color: #e74c3c
+	   }
+  
+  .formGroutName.success  i.fa-check-circle,
+  .formGroutEmail.success  i.fa-check-circle,
+  .formGroutPass.success  i.fa-check-circle{
+    	visibility:visible;
+    	color: #2ecc71
+	   }
+  
+  .formGroutName.error  i.fa-exclamation-circle,
+  .formGroutEmail.error  i.fa-exclamation-circle,
+  .formGroutPass.error  i.fa-exclamation-circle, 
+ 
+  .formGroutName.error small,
+  .formGroutEmail.error small,
+  .formGroutPass.error small{
+    	visibility:visible;
+    	color: #e74c3c
+	   }
+  
+
+  .formInput,.formButton{
+		letter-spacing: 1px;
+		font-size: 16px;  
+	    }
+  .formInput{
+	   width: 100%;
+	   padding: 5px 0 12px 0 ;
+	   border:none;
+	   border-bottom: 1px solid rgba(50, 76, 199,.4);
+	   background: transparent;
+	   transition: 0.3s;
+	   color: #ececec;
+	   padding-left: 5px;
+	   box-shadow: inset 0 1px 5px rgba(0,0,0,0.2); /* Тень внутри */
+	    }
+  .formInput:focus{
+	   border-bottom: 1px solid rgba(26, 115, 168, 1)
+	   }
+  .formInput::placeholder{
+		color: #1B3A5F;
+	    }
+/*--------------------*/
+
+
+/*-------низ------*/
+	.botton{
+		padding: 0px 30px 30px 30px;
+		color: #ececec
+	    }
+	
+	.formButton{
+		padding: 10px 20px;
+		border:none;
+		color: #ececec;
+		background: #E94347;
+	   cursor: pointer;
+	   transition: 0.3s;
+	   border-radius: 50px;
+	   margin-bottom: 10px;
+	    }
+	 .formButton ~ .logOf{
+	 	margin-bottom: 30px;
+	 	font-size: 14px;
+	 }
+	 .iconVk{
+	 	color: #4c75a3;
+	 	padding: 5px;
+	 	font-size: 15px
+	 }
+	  .iconGoogle{
+	 	color: #DB4437;
+	 	padding: 5px;
+	 	font-size: 15px
+	 }
+   .formButton:hover,
+	.formButton:focus{
+	  	background: #1B3A5F;
+	  	box-shadow: 1px 2px 3px 0px rgba(0,0,0,.7)
+	    }
+	
+
+
+	/*чекбокс*/
+		.checkbox {
+		  position: absolute;
+		  z-index: -1;
+		  opacity: 0;
+		  }
+		.checkbox+label {
+		  display: inline-flex;
+		  align-items: center;
+		  }
+		.checkbox+label::before {
+		  content: '';
+			  margin: 5px 5px 5px 0 ;
+			  display: inline-block;
+			  width: 1.1em;
+			  height: 1.1em;
+			  border: 1px solid #adb5bd;
+			  border-radius: 0.25em;
+			  background: no-repeat;
+			  background-position: center center;
+			  background-size: 50% 50%;
+		  }
+		.checkbox:checked+label::before {
+		  border-color: #E94347;
+		  background-color: #E94347;
+		  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+		  }
+	/*--------------*/
+
+/*---------------*/
+
+
